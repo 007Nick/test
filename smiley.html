@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>smiley</title>
+	<style>
+	.face{
+		width:500px;
+		height: 500px;
+		box-shadow: 5px 5px 5px 5px #252525;
+		border: 4px solid red;
+		border-radius: 50%;
+		display: inline-block;
+		position:relative;
+		background-color: #fffa00;
+	}
+		.eye{
+			background-color: black;
+			width: 32px;
+			height: 32px;
+			border-radius:50%;
+			position: absolute;
+			top:20%;
+		}
+		.left{
+			left: 20%;
+		}
+		.right{
+			right: 20%;
+		}
+		.smile{
+			border-bottom: 1px solid red;
+			position: absolute;
+			width: 70%;
+			height: 51%;
+			bottom: 40px;
+            border-radius: 50%;
+            left : 15%;
+            bottom : 10%;
+		}
+		.smile-container{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		.smile:hover{
+			border-bottom: 0;
+			border-top: 1px solid red;
+			transition: .8s;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+<div class="face">
+	<div class="eye left"></div>
+	<div class="eye right"></div>
+	<div class="smile-container"></div>
+	<div class="smile"></div>
+</div>
+</body>
+</html>
